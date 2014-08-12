@@ -1,0 +1,52 @@
+# basepermalink: ""
+collections:
+  organization:
+    desc: cliffcloud's organized a little differently - this brief overview covers it
+    url: /organization/
+    color: green
+    icon: fa-cogs
+    output: true
+  tour:
+    output: true
+    desc: get a feel for how fast the site is without having to worry about specifics
+    url: /tour/
+    color: blue
+    icon: fa-rocket
+  features:
+    output: true
+    desc: get to know the not-so-obvious features cliffcloud has to offer
+    url: /features/
+    color: brown
+    icon: fa-compass
+  blog:
+    output: true
+    desc: updates & news
+    url: /blog/
+    color: red
+    icon: fa-bullhorn
+  code:
+    output: true
+    desc: the starting point for getting in on cliffcloud's code development
+    url: /code/
+    color: black
+    icon: fa-code
+  maintenance:
+    output: true
+    desc: it's easy to help keep cliffcloud growing. check what you can do here
+    url: /maintenance/
+    color: orange
+    icon: fa-child
+
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: default
+description: "send it up"
+email: rocksinthecloud@gmail.com
+markdown: kramdown
+permalink: pretty
+title: CliffCloud
+

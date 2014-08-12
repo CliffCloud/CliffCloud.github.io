@@ -1,0 +1,15 @@
+- name: naturally
+  icon: fa-cloud fa-flip-horizontal
+  url: http://www.cliffcloud.com
+
+- name: github
+  icon: fa-github
+  url: https://github.com/CliffCloud
+
+- name: uservoice
+  icon: fa-comment
+  url: http://cliffcloud.uservoice.com/
+
+- name: email
+  icon: fa-envelope
+  url: mailto:rocksinthecloud@gmail.com

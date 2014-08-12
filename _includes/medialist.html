@@ -1,0 +1,18 @@
+<div style="text-align:left;">
+{% for post in include.list %}
+  <div class="media">
+    {% if post.titleimage %}    
+      <a class="pull-left" href="{{ post.url }}">
+        <img class="media-object" src="{{ post.titleimage }}">
+      </a>
+    {% endif %}
+    <div class="media-body">
+      <a href="{{ post.permalink }}">
+        <h4 class="media-heading">{{ post.title }}</h4>
+      </a>
+      <p>{{ post.excerpt }}</p>
+    </div>
+  </div>
+{% endfor %}
+</div>
+

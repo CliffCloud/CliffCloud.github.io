@@ -1,0 +1,10 @@
+<div class="mastfoot">
+  <div class="inner">
+    {% for feature in site.data.resources %}
+      <a href="{{ feature.url }}">
+        <i class=" fa fa-lg fa-fw {{ feature.icon }}"></i>
+        <span>{{ feature.name }}</span>
+      </a>
+    {% endfor %}
+  </div>
+</div>
