@@ -184,3 +184,20 @@ body {
   padding:10px;
   margin-bottom:30px;
 }
+.section-header h2{
+  margin: 12px 0px;
+}
+.media{
+  background: rgba( 0,0,0,.2 );
+  color: white;
+  padding: 20px;
+}
+.media-heading{
+  color: black;
+}
+.media-object {
+  max-width: 80px;
+}
+.media-body{
+  vertical-align: center;
+}

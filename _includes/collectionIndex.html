@@ -1,0 +1,20 @@
+<div style="text-align:left;">
+{% for feature in include.list %}
+  {% if feature.showInIndex %}
+    <div class="media">
+      {% if feature.titleimage %}    
+        <a class="pull-left" href="{{ feature.url }}">
+          <img class="media-object img-rounded" src="{{ feature.titleimage }}">
+        </a>
+      {% endif %}
+      <div class="media-body">
+        <a href="{{ feature.url }}">
+          <h4 class="media-heading">{{ feature.title }}</h4>
+        </a>
+        <p>{{ feature.description }}</p>
+      </div>
+    </div>
+  {% endif %}
+{% endfor %}
+</div>
+

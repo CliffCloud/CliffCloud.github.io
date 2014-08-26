@@ -1,6 +1,7 @@
 ---
 layout: center
 title: home
+showInIndex: false
 tags:
   - climbing
 ---
@@ -8,4 +9,6 @@ tags:
 <div class="section-header {{page.collection}}" >
  <h2>{{ page.collection }}</h2>
 </div>
+
+{% include collectionIndex.html list=site.code %}
 

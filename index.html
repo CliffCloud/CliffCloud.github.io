@@ -19,24 +19,37 @@ tags:
   .feature-box:hover{
     opacity:1;
   }
-  .feature-box > h2 , i {
-    vertical-align:middle;
-    padding: 20px 0px;
+  .feature-box h2 {
+    padding: 20px 0px 10px;
   }
-  .feature-box > p {
-    vertical-align:middle;
+  .feature-box p {
     padding: 0px 5px;
+  }
+  .feature-box span {
+    vertical-align:middle;
+    display: inline-block;
+  }
+  .row {
+    margin-right: 0px;
+    margin-left: 0px;
   }
 </style>
 <div class="row">
   {% for entry in site.collections %}
+
     <div class="feature-item col-sm-6 col-md-4">
       <a href="{{ entry[1].url }}">
         <div class="feature-box {{ entry[1].label }}">
-          <i class="fa fa-4x {{ entry[1].icon }}"></i>
-          <p>{{ entry[1].desc }}</p>
+          <span>
+            <h2>
+              <i class="fa  {{ entry[1].icon }}"></i>
+              {{ entry[0] }}
+            </h2>
+            <p>{{ entry[1].description }}</p>
+          </span>
         </div>
       </a>
     </div>
+
   {% endfor %}
 </div>
