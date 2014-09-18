@@ -204,3 +204,15 @@ body {
   color:white;
   text-shadow: 0px 0px 3px gray;
 }
+img{
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.site-wrapper-inner a{
+  color: #0088cc;
+  text-decoration: none;
+}
+.site-wrapper-inner a:hover{
+  text-decoration: underline;
+}
